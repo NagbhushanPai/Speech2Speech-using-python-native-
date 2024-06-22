@@ -5,3 +5,5 @@ print("Hey ",ask," nice to meet you")
 print("Checking this message")
 
 print("HEYA MAN")
+age = int(input("How old are you? "))
+print("You are", age, "years old.")
