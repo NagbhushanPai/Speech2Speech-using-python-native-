@@ -20,7 +20,7 @@ pip install speech_recognition googletrans pyttsx3
 
 1. Run the script using the command `python mk.py`.
 2. Speak a sentence when prompted.
-3. The script will recognize your speech and translate it from English to Hindi.
+3. The script will recognize your speech and translate it from English to Hindi or any other langauge you want provided it's in the google list.
 4. The translated text will be spoken out loud using the `pyttsx3` library.
 
 ### Troubleshooting
