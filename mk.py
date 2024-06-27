@@ -36,16 +36,13 @@ with mc as source:
     # Storing the speech into audio variable
     audio = recog1.listen(source)
     
-    # Using recognize.google() method to
-    # convert audio into text
+    # Using recognize.google() method to convert audio into text
     get_sentence = recog1.recognize_google(audio)
 
-    # Using try and except block to improve
-    # its efficiency.
+    # Using try and except block to improve its efficiency.
     try:
         
-        # Printing Speech which need to 
-        # be translated.
+        # Printing Speech which need to be translated.
         print("Phrase to be Translated :" + get_sentence)
 
         text_to_translate = translator.translate(get_sentence, src=from_lang, dest=to_lang)
