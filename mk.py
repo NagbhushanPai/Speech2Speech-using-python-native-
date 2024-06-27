@@ -13,18 +13,19 @@ recog1 = spr.Recognizer()
 mc = spr.Microphone()
 
 
-# Here initialising the recorder with 
-# hello, whatever after that hello it
-# will recognise it.
+
 # Translator method for translation
 translator = Translator()
 
-# short form of english in which 
-# you will speak
+#  print(googletrans.LANGUAGES)  to get all the languages
+
+
+# short form of english in which you will speak
+
+
 from_lang = 'en'
 
-# In which we want to convert, short 
-# form of hindi
+# In which we want to convert, short form of hindi
 to_lang = 'hi'
 
 with mc as source:
@@ -60,29 +61,3 @@ with mc as source:
     except spr.RequestError as e:
         print("Unable to provide Required Output".format(e))
 
-
-'''
-        # Using translate() method which requires 
-        # three arguments, 1st the sentence which
-        # needs to be translated 2nd source language
-        # and 3rd to which we need to translate in 
-        text_to_translate = translator.translate(get_sentence, src=from_lang, dest=to_lang)
-        
-        # Storing the translated text in text 
-        # variable 
-        text = text_to_translate.text 
-
-        # Using pyttsx3 to speak the translated text
-        engine = pyttsx3.init()
-        engine.say(text)
-        engine.runAndWait()
-
-    # Here we are using except block for UnknownValue 
-    # and Request Error and printing the same to
-    # provide better service to the user.
-    except spr.UnknownValueError:
-        print("Unable to Understand the Input")
-        
-    except spr.RequestError as e:
-        print("Unable to provide Required Output".format(e))
-'''
